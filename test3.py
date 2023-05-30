@@ -95,11 +95,3 @@ for i in d:
     print(i)
 
 
-"""def print_documents():
-    d = collection.find({'status': 'A'})
-    documents = list(d)
-    for doc in documents:
-        print(doc)
-
-# Call the function to print the documents
-print_documents()"""
