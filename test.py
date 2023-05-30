@@ -18,12 +18,21 @@ except Exception as e:
     print(e)
 
 
-data = {
-    "name"  : "microsoft",
-    "email_id" : "microsoft@gmail.com",
-    "industry" : "tech industry"
-}
+list_of_records = [
+    { 'companyName' : 'google',
+      'product' : 'AI model',
+      'courseOffered' : 'Machine Learning with Deployment'},
+
+    { 'companyName' : 'google',
+      'product' : 'AI model',
+      'courseOffered' : 'Deep Lerning for NLP and Computer visison'},
+
+    { 'companyName' : 'google',
+      'product' : 'AI model',
+      'courseOffered' : 'Data Science Master Program'},
+
+]
 
 db = client['software_solutions']
 coll = db["information"]
-coll.insert_one(data)
+coll.insert_many(list_of_records)
